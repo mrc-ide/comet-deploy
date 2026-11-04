@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
   proxy:
     command: app:8080 comet.dide.ic.ac.uk 80 443
-    image: reside/proxy-nginx:master
+    image: ghcr.io/reside-ic/proxy-nginx:latest
     links:
     - comet:app
     ports:
